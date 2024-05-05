@@ -6,7 +6,7 @@ import { Button } from "@/components/Button"
 import { categoryFields } from "@/utils/constant"
 
 export const getServerSideProps = async () => {
-  const { data } = await axios("http://localhost:3001/api/places")
+  const { data } = await axios("http://localhost:3000/api/places")
 
   return {
     props: { initialPlaces: data },
@@ -20,7 +20,7 @@ const HomePage = ({ initialPlaces }) => {
     setPlaces(newPlaces)
 
     try {
-      await axios.delete(`http://localhost:3001/api/places/${placeId}`)
+      await axios.delete(`http://localhost:3000/api/places/${placeId}`)
     } catch (err) {
       setPlaces([...newPlaces, deletedPlace])
     }

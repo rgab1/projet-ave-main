@@ -10,7 +10,7 @@ import { listCategory, listCountries, categoryFields } from "@/utils/constant"
 
 export const getServerSideProps = async ({ params: { placeId } }) => {
   const { data: place } = await axios(
-    `http://localhost:3001/api/places/${placeId}`,
+    `http://localhost:3000/api/places/${placeId}`,
   )
 
   return {

@@ -8,7 +8,7 @@ import { useState } from "react"
 import * as yup from "yup"
 
 export const getServerSideProps = async () => {
-  const { data: places } = await axios("http://localhost:3001/api/places")
+  const { data: places } = await axios("http://localhost:3000/api/places")
 
   return {
     props: {

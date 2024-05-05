@@ -1,40 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Bonjour,
 
-## Getting Started
+Ce projet a été codé plus ou moins en six jours
 
-First, run the development server:
+lundi 29 avril:
+-initiation du projet à la fin des cours à l'aide de certains camarades
+-importation du code des différents projets todos fait en cours
+-différentes modifications pour faire fonctionner mon mon projet "frankenstein" (fails miserably)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+mardi 30 avril:
+-dû au rater de la veille, recherche sur la doc pour mongoose avec un pages router
+-tente de faire fonctionner mon projet avec mes nouvelles connaissances (fails miserably, again)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+mercredi 1 mai:
+-va passer la soiré chez un camarade avec un autre camarade pour bosser à trois
+-initie leur projets car ils n'utilisaient pas next.js
+-se rends compte que mon projet avait été mal initier sur un app router le jour 1 par mon camarade
+-essaye de connecter la db, va dormir à 4h30 du matin (failed misearbly, again again)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+jeudi 2 mai:
+-Vincent the goat me fait tous fonctionner, m'explique les schemas db et yup
+-est trop content
+-implémente la barre de recherche et page associée
+-se rend compte que mes schemas ne permettent pas l'implémentation des attributs category specific
+-les pages add edits et show ne fonctionnent donc plus car n'ont rien de dynamic (en fonction de la catégorie)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+vendredi 3 mai:
+-passe la journée sur le projet d'étude
+-passe la nuit sur le projet frankenstein (ça marche toujours pas dû à des erreurs de schema yup qui ne saffichent pas)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+samedi 4 mai:
+-passe la l'aprem sur le projet (fails less miserably)
+-utilise la carte appel à un ami (Alex the goat)
+-il m'explique que yup n'envoi pas d'erreurs dans la console
+-passe la nuit à tenter de faire fonctionner avec des initialValues, validationSchema dynamics (fonctionne à moitié à 4h du matin)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+dimanche 5 mai:
+-laisse tomber l'idée des schemas dynamics et tente d'utiliser un objet dans le schema db pour les category specifics
+-réussi à l'implémenter en 15 min...
+-passe l'aprem et la soirée sur le projet (affichage correct des category specifics), css des pages, implémentations très bancale des filtres
+-écris la doc (23h45 quand j'écris ces mots)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+En résumé le projet frankenstein fonctionne presque complètement mais aurait été bien meilleur si j'avais géré mon temps correctement (je voulais sécuriser mon stage et alternance avant de me pencher sur le projet)
